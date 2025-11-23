@@ -5,7 +5,7 @@ i18next
     fallbackLng: 'en',
     debug: true,
     backend: {
-      loadPath: '/locales/{{lng}}.json'
+      loadPath: 'Steel/locales/{{lng}}.json'
     }
   }, function(err, t) {
     updateContent();
@@ -37,3 +37,4 @@ document.querySelectorAll(".lang-option").forEach(option => {
     document.getElementById("langMenu").style.display = "none";
   });
 });
+
