@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H.M ELBANNA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="logo-container">
+            <img src="logo.png" class="logo-loder">
+
+        </div>
+
+    </div>
+
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="logo.png" class="img-logo">
+                    </div>
+                    <span class="logo-text">H.M ELBANNA</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#hero" class="nav-link" data-i18n="Home"></a>
+                    <a href="#about" class="nav-link" data-i18n="About">About</a>
+                    <a href="product.html" class="nav-link" data-i18n="Products">Products</a>
+                    <a href="#process" class="nav-link" data-i18n="Process"> Process</a>
+                    <a href="#news" class="nav-link" data-i18n="News">News</a>
+                    <a href="contact-us.html" class="btn btn-primary" data-i18n="Contact-us">Contact Us</a>
+                    <div class="lang-dropdown">
+                        <button id="langBtn"><img src="global.png" alt="" width="30px"></button>
+                
+                        <div id="langMenu" class="lang-menu">
+                            <div class="lang-option" data-lang="en" >English</div>
+                            <div class="lang-option" data-lang="ar">العربية</div>
+                        </div>
+                    </div>
+                
+                
+                    <input type="hidden" id="languageSwitcher" value="en">
+
+                
+                
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#hero" class="nav-link-mobile" data-i18n="Home">Home</a>
+                <a href="#about" class="nav-link-mobile" data-i18n="About"> About</a>
+                <a href="product.html" class="nav-link-mobile" data-i18n="Products">Products</a>
+                <a href="#process" class="nav-link-mobile" data-i18n="Process">Process</a>
+                <a href="#news" class="nav-link-mobile" data-i18n="News">News</a>
+                <a href="contact-us.html" class="btn btn-primary btn-full" data-i18n="Contact-us">Contact Us</a>
+
+                <div class="lang-option" data-lang="en" >English</div>
+                <div class="lang-option" data-lang="ar">العربية</div>  
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <video class="video-desktop" autoplay muted loop playsinline>
+                <source src="cutting machine show_off.mp4" type="video/mp4">
+            </video>
+
+            <video class="video-mobile" autoplay muted loop playsinline>
+                <source src="mobilecover.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-i18n="Industry-Leader-Since">Industry Leader Since 2001</div>
+
+                <h1 class="hero-title" data-i18n="Building-Tomorrow">
+                    Building Tomorrow's
+                    <span class="hero-title-gradient" data-i18n="Infrastructure">Infrastructure Today</span>
+                </h1>
+
+                <p class="hero-description" data-i18n="Premium-steel">
+                    Premium steel manufacturing with cutting-edge technology, delivering excellence in every beam, pipe,
+                    and sheet we produce.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="product.html" class="btn btn-primary btn-lg" data-i18n="Explore-Products">
+                        Explore Products
+                        <svg class="icon-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="" class="btn btn-outline btn-lg" >
+                        <svg class="icon-play" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3" />
+                        </svg>
+                        <span data-i18n="Watch-Our-Story">Watch Our Story</span>
+                         <!-- Video Modal -->
+
+                    </a>
+                                           <div id="videoModal" class="video-modal">
+                            <div class="video-content">
+                                <span class="close-btn"></span>
+                                <iframe id="youtubeFrame" src="" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">500K+</div>
+                        <div class="stat-label"  data-i18n="Tons-Produced">Tons Produced</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">2000+</div>
+                        <div class="stat-label" data-i18n="Projects-Completed">Projects Completed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label" data-i18n="Client-Satisfaction">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left Column -->
+                <div class="about-text">
+                    <div class="section-badge" data-i18n="About-Us">About Us</div>
+                    <h2 class="section-title" data-i18n="Forging-Strength">Forging Strength, Shaping the Future</h2>
+                    <p class="text-paragraph" >
+                        <span data-i18n="We-specialize-in-laser">We specialize in laser cutting and metal forming, delivering the highest quality with the
+                                                    fastest turnaround times.
+                        Our workshop is equipped with the latest machines for precision cutting and forming, including:
+                        </span>
+
+                        <br/>
+                        <span style="font-weight: bold;" data-i18n="Trumpf-3040">Trumpf 3040</span> 
+  <br/>
+                        <span style="font-weight: bold;" data-i18n="Trumpf-3050">Trumpf 3050</span>
+  <br/>
+                       <span style="font-weight: bold;" data-i18n="DNE">DNE</span> 
+  <br/>
+                       <span style="font-weight: bold;" data-i18n="YSD"> YSD CNC Press Brake</span>
+  <br/>
+                       <span style="font-weight: bold;" data-i18n="variety-of-materials"> We handle a variety of materials, such as:</span>
+  <br/>
+                       <span style="font-weight: bold;" data-i18n="Steel"> Steel up to 25 mm thick</span>
+  <br/>
+                     <span style="font-weight: bold;" data-i18n="Stainless"> Stainless steel up to 16 mm thick</span>  
+  <br/>
+                       <span style="font-weight: bold;" data-i18n="Aluminum"> Aluminum up to 15 mm thick </span>
+                    </p>
+                    <p class="text-paragraph" data-i18n="We-combine-advanced">
+                        We combine advanced technology with skilled craftsmanship to deliver solutions that meet your exact specifications—on time, every time.
+                    </p>
+                    <div class="timeline-badge">
+                        <div class="timeline-line"></div>
+                        <span class="timeline-text" data-i18n="of-Excellence">25 Years of Excellence</span>
+                    </div>
+                </div>
+
+                <!-- Right Column - Timeline -->
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year"> 2001 </div>
+                            <h3 class="timeline-title" data-i18n="Foundation">Foundation</h3>
+                            <p class="timeline-description" data-i18n="Started-with-small">
+                                Started with a small facility and a vision to revolutionize steel manufacturing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year" >2010</div>
+                            <h3 class="timeline-title" data-i18n="Expansion">Expansion</h3>
+                            <p class="timeline-description" data-i18n="Expanded-operations">
+                                Expanded operations internationally, establishing partnerships across 3 continents.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year" >2015</div>
+                            <h3 class="timeline-title" data-i18n="Innovation">Innovation</h3>
+                            <p class="timeline-description" data-i18n="Introduced-eco-friendly">
+                                Introduced eco-friendly production methods, reducing emissions by 40%.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item timeline-item-last">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year" data-i18n="Home">2025</div>
+                            <h3 class="timeline-title" data-i18n="Industry-Leader">Industry Leader</h3>
+                            <p class="timeline-description" data-i18n="Leading-the-industry">
+                                Leading the industry with smart manufacturing and AI-driven quality control.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission -->
+            <div class="mission-box">
+                <div class="mission-bg-circle"></div>
+                <div class="mission-content">
+                    <h3 class="mission-title" data-i18n="Our-Mission"> Our Mission</h3>
+                    <p class="mission-text" data-i18n="leading-name">
+                        To be a leading name in precision metal cutting and shaping, delivering high-quality solutions that meet the needs of our clients. 
+                        We aim to innovate sustainably, empower our team and partners, and provide reliable, durable metal products for modern infrastructure. 
+                        Our commitment is to excellence, safety, and environmentally responsible practices.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Values -->
+            <div class="values-section">
+                <div class="values-header">
+                    <h3 class="values-title" data-i18n="Our-Core-Values">Our Core Values</h3>
+                    <p class="values-subtitle" data-i18n="These-principles">
+                        These principles guide every decision we make and define who we are as a company.
+                    </p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="8" r="7" />
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                            </svg>
+                        </div>
+                        <h4 class="value-title" data-i18n="Excellence">Excellence</h4>
+                        <p class="value-description" data-i18n="Home">
+                            Committed to delivering the highest quality steel products that exceed industry standards.
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="6" />
+                                <circle cx="12" cy="12" r="2" />
+                            </svg>
+                        </div>
+                        <h4 class="value-title" data-i18n="Innovation">Innovation</h4>
+                        <p class="value-description" data-i18n="Continuously">
+                            Continuously investing in cutting-edge technology and sustainable manufacturing processes.
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h4 class="value-title " data-i18n="Partnership">Partnership</h4>
+                        <p class="value-description" data-i18n="Building">
+                            Building lasting relationships with clients through reliability and exceptional service.
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <h4 class="value-title" data-i18n="Integrity">Integrity</h4>
+                        <p class="value-description" data-i18n="Operating">
+                            Operating with transparency, honesty, and unwavering commitment to safety.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge" data-i18n="Our-Products">Our Products</div>
+                <h2 class="section-title" data-i18n="Premium-Steel-Solutions">Premium Steel Solutions</h2>
+                <p class="section-subtitle" data-i18n="Comprehensive"> 
+                    Comprehensive range of high-quality steel products engineered to meet the most demanding
+                    specifications
+                </p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="products/balcony 2.jpg"
+                            alt="Structural Steel Beams">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title" data-i18n="Structural">Structural Steel Beams</h3>
+                        <p class="product-description" data-i18n=" High-strength">
+                            High-strength I-beams and H-beams for commercial and residential construction. Available in
+                            various grades and specifications.
+                        </p>
+                        <div class="product-features">
+                            <div class="feature-item" data-i18n="Home">ASTM A992 Grade 50</div>
+                            <div class="feature-item" data-i18n="Home">Custom lengths up to 60ft</div>
+                            <div class="feature-item" data-i18n="Home">Hot-rolled finish</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="products/cut 1.jpg"
+                            alt="Steel Pipes & Tubes">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title" data-i18n="Steel-Pipes" >Steel Pipes & Tubes</h3>
+                        <p class="product-description" data-i18n="Seamless">
+                            Seamless and welded pipes for industrial, plumbing, and structural applications.
+                            Corrosion-resistant coatings available.
+                        </p>
+                        <div class="product-features">
+                            <div class="feature-item" data-i18n="Home">Sizes: 1/2" to 48" diameter</div>
+                            <div class="feature-item" data-i18n="Home">Schedule 40 to XXH</div>
+                            <div class="feature-item" data-i18n="Home">API 5L certified</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="products/door.jpg"
+                            alt="Steel Sheets & Plates">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title" data-i18n="Steel-Sheets">Steel Sheets & Plates</h3>
+                        <p class="product-description" data-i18n="Precision-cut">
+                            Precision-cut sheets and heavy-duty plates for fabrication, automotive, and manufacturing
+                            industries.
+                        </p>
+                        <div class="product-features">
+                            <div class="feature-item" data-i18n="Home">Thickness: 0.5mm to 100mm</div>
+                            <div class="feature-item" data-i18n="Home">Cold & hot-rolled options</div>
+                            <div class="feature-item" data-i18n="Home">Custom cutting services</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="products/elec box.jpg"
+                            alt="Specialty Steel Products">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title" data-i18n="Specialty">Specialty Steel Products</h3>
+                        <p class="product-description" data-i18n="fabricated">
+                            Custom fabricated steel components, reinforcement bars, and specialized alloys for unique
+                            project requirements.
+                        </p>
+                        <div class="product-features">
+                            <div class="feature-item" data-i18n="Home">Custom fabrication</div>
+                            <div class="feature-item" data-i18n="Home">Stainless & alloy steels</div>
+                            <div class="feature-item" data-i18n="Home">Engineering support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-solution-box">
+                <h3 class="custom-title" data-i18n="Need-Custom">Need a Custom Solution?</h3>
+                <p class="custom-description" data-i18n="engineering">
+                    Our engineering team can develop specialized steel products tailored to your unique project
+                    requirements.
+                </p>
+                <a href="contact-us.html" class="btn btn-primary btn-lg" data-i18n="Request-Custom-Quote">Request Custom Quote →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="process-bg">
+            <div class="process-circle process-circle-1"></div>
+            <div class="process-circle process-circle-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header section-header-light">
+                <div class="section-badge section-badge-light" data-i18n="Our-Process">Our Process</div>
+                <h2 class="section-title section-title-light" data-i18n="From-Raw">From Raw Material to Excellence</h2>
+                <p class="section-subtitle section-subtitle-light" data-i18n="A-seamless">
+                    A seamless production process combining cutting-edge technology with decades of expertise
+                </p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-step-header">
+                        <div class="process-icon process-icon-1">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                                <line x1="3" y1="6" x2="21" y2="6" />
+                                <path d="M16 10a4 4 0 0 1-8 0" />
+                            </svg>
+                        </div>
+                        <div class="process-number">1</div>
+                    </div>
+                    <h3 class="process-title" data-i18n="Material-Selection">Material Selection</h3>
+                    <p class="process-description" data-i18n="Premium-raw">
+                        Premium raw materials sourced from certified suppliers, ensuring optimal quality from the start.
+                    </p>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-step-header">
+                        <div class="process-icon process-icon-2">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg>
+                        </div>
+                        <div class="process-number">2</div>
+                    </div>
+                    <h3 class="process-title" data-i18n="Melting">Melting & Refining</h3>
+                    <p class="process-description" data-i18n="State-of-the-art">
+                        State-of-the-art electric arc furnaces melt and refine steel to precise chemical compositions.
+                    </p>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-step-header">
+                        <div class="process-icon process-icon-1">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M13.8 12H3" />
+                            </svg>
+                        </div>
+                        <div class="process-number">3</div>
+                    </div>
+                    <h3 class="process-title" data-i18n="Forming-Shaping">Forming & Shaping</h3>
+                    <p class="process-description" data-i18n="Advanced-rolling">
+                        Advanced rolling mills and forging equipment shape steel into desired profiles and dimensions.
+                    </p>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-step-header">
+                        <div class="process-icon process-icon-2">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                        </div>
+                        <div class="process-number">4</div>
+                    </div>
+                    <h3 class="process-title" data-i18n="Quality-Control">Quality Control</h3>
+                    <p class="process-description" data-i18n="Rigorous">
+                        Rigorous testing at every stage using ultrasonic, magnetic, and visual inspection methods.
+                    </p>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-step-header">
+                        <div class="process-icon process-icon-1">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="16.5" y1="9.4" x2="7.5" y2="4.21" />
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                            </svg>
+                        </div>
+                        <div class="process-number">5</div>
+                    </div>
+                    <h3 class="process-title" data-i18n="Home">Finishing & Coating</h3>
+                    <p class="process-description" data-i18n="Home">
+                        Surface treatments, coatings, and finishing processes to enhance durability and appearance.
+                    </p>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-step-header">
+                        <div class="process-icon process-icon-2">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="1" y="3" width="15" height="13" />
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                                <circle cx="5.5" cy="18.5" r="2.5" />
+                                <circle cx="18.5" cy="18.5" r="2.5" />
+                            </svg>
+                        </div>
+                        <div class="process-number">6</div>
+                    </div>
+                    <h3 class="process-title" data-i18n="Delivery">Delivery</h3>
+                    <p class="process-description" data-i18n="Secure">
+                        Secure packaging and reliable logistics ensure products arrive on time and in perfect condition.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge" data-i18n="Testimonials">Testimonials</div>
+                <h2 class="section-title" data-i18n="What-Our-Clients">What Our Clients Say</h2>
+                <p class="section-subtitle" data-i18n="Trusted-by-leading">
+                    Trusted by leading construction and manufacturing companies worldwide
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        H.M ELBANNA Industries has been our go-to supplier for over 10 years. Their product quality is
+                        unmatched, and their delivery timeline is consistently reliable. They've never let us down on
+                        any project.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MA</div>
+                        <div class="author-info">
+                            <div class="author-name">Mohamed Hassan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        The technical support and custom fabrication services provided by H.M ELBANNA are exceptional.
+                        They worked with our team to develop specialized steel components that met our unique
+                        specifications perfectly.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <div class="author-name">Ashraf Ali</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        We've partnered with several steel suppliers over the years, but none compare to H.M ELBANNA.
+                        Their attention to quality control and commitment to sustainable practices aligns perfectly with
+                        our values.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DC</div>
+                        <div class="author-info">
+                            <div class="author-name">M.Sokara</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        From initial consultation to final delivery, the entire process was seamless. The team at
+                        H.M ELBANNA is professional, knowledgeable, and always willing to go the extra mile to ensure
+                        client satisfaction.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JW</div>
+                        <div class="author-info">
+                            <div class="author-name">Ali Sayed</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        Quality, reliability, and innovation – that's what H.M ELBANNA represents. They've helped us
+                        complete some of our most challenging projects with their superior products and engineering
+                        support.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RT</div>
+                        <div class="author-info">
+                            <div class="author-name">Ashraf Amir</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        The consistency in product quality across multiple orders is remarkable. H.M ELBANNA has set the
+                        benchmark for what a steel supplier should be. Highly recommend to any serious construction
+                        company.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LP</div>
+                        <div class="author-info">
+                            <div class="author-name">Sayed A.Ali</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client Logos -->
+            <div class="client-logos">
+                <p class="client-logos-title" data-i18n="Trusted">Trusted by industry leaders</p>
+                <div class="client-logos-grid">
+                    <div class="client-logo">Misr Bahrain Company</div>
+                    <div class="client-logo">Compound Z</div>
+                    <div class="client-logo">Misr Bahrain Company</div>
+                    <div class="client-logo">Advanced Technology Services Company</div>
+                    <div class="client-logo">Blade & Shade Beauty Bar</div>
+                    <div class="client-logo">Al Salam University</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge" data-i18n="Machines">Our Machines</div>
+                <h2 class="section-title" data-i18n="Industry-Updates">Industry Updates & Insights</h2>
+                <p class="section-subtitle" data-i18n="Stay-informed">
+                    Stay informed about our latest Machines, innovations, and company milestones
+                </p>
+            </div>
+
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="machins/ChatGPT Image Nov 18, 2025, 03_57_24 AM.png"
+                            alt="News">
+                        <div class="news-category" data-i18n="Machine">Machine</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                        </div>
+                        <h3 class="news-title" data-i18n="Machines1">Machines 1</h3>
+                        <p class="news-excerpt" data-i18n="Our-latest">
+                            Our latest manufacturing facility reduces carbon emissions by 50% while increasing
+                            production capacity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="machins/ChatGPT Image Nov 18, 2025, 04_01_13 AM.png"
+                            alt="News">
+                        <div class="news-category" data-i18n="Machine">Machine</div>
+                    </div>
+                    <div class="news-content" >
+                        <h3 class="news-title"data-i18n="Machines2">Machines 2</h3>
+                        <p class="news-excerpt"data-i18n="supplied">
+                            H.M ELBANNA supplied over 50,000 tons of structural steel for the new Metropolitan Bridge
+                            project.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="machins/ChatGPT Image Nov 20, 2025, 02_20_44 AM.png"
+                            alt="News">
+                        <div class="news-category" data-i18n="Machine">Machine</div>
+                    </div>
+                    <div class="news-content">
+                        <h3 class="news-title" data-i18n="Machines3">Machines 3</h3>
+                        <p class="news-excerpt" data-i18n="Recognition">
+                            Recognition of our commitment to sustainable manufacturing practices and environmental
+                            responsibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge" data-i18n="Contact-Us">Contact Us</div>
+            <h2 class="section-title" data-i18n="Great-Together">Let's Build Something Great Together</h2>
+            <p class="section-subtitle" data-i18n="project-in-mind">
+                Have a project in mind? Get in touch with our team for a consultation
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-form-container">
+                <div class="contact-form-card">
+                    <h3 class="form-title" data-i18n="Send-us-a-message">Send us a message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group" >
+                                <label for="Full-Name" data-i18n="Full-Name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group" >
+                                <label for="email" data-i18n="Email-Address">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@company.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group" >
+                                <label for="company" data-i18n="Company-Name">Company Name</label>
+                                <input type="text" id="company" name="company" placeholder="Your Company">
+                            </div>
+                            <div class="form-group" >
+                                <label for="phone" data-i18n="Phone-Number">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                            <label for="message" data-i18n="Message">Message *</label>
+                            <textarea id="message" name="message" required rows="6"
+                                placeholder="Tell us about your project requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-full" data-i18n="Send-Message">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact-info-container">
+                <a href="https://maps.app.goo.gl/EGA7V9ueQz1sGgFVA?g_st=aw" style="text-decoration: none;">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4 data-i18n="Visit-Main-branch">Visit Us In Main branch</h4>
+                            <p data-i18n="In-front"> In front of Al-Safeer Cafeteria, 139 Third Industrial Zone</p>
+                            <p data-i18n="Service">Service Axis</p>
+                            <p data-i18n="Giza-Governorate">Giza Governorate</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://maps.app.goo.gl/NyNxpCoes6NAXToB6?g_st=aw" style="text-decoration: none;">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4 data-i18n="Other-branches">Other branches</h4>
+                            <p data-i18n="Section-2">Section 2, 6th of October</p>
+                            <p data-i18n="720-Youth">720 Youth Stores -300</p>
+                            <p data-i18n="Giza-Governorate">Giza Governorate</p>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                    </div>
+                    <div class="contact-info-content">
+                        <h4 data-i18n="Call-Us">Call Us</h4>
+                        <p>+20 1044884283</p>
+
+                    </div>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </div>
+                    <div class="contact-info-content">
+                        <h4 data-i18n="Email-Us">Email Us</h4>
+                        <p>hatemelbana106@gmail.com</p>
+
+                    </div>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <div class="contact-info-content">
+                        <h4 data-i18n="Business-Hours">Business Hours</h4>
+                        <p data-i18n="Saturday-Thursday">Saturday - Thursday: 8AM - 5PM</p>
+                        <p data-i18n="Friday-Closed">Friday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <!-- Map Placeholder -->
+        <div class="map-container">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27666.470630017386!2d30.866279225006238!3d29.91301012008916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458ff171f6d4d35%3A0x224b53bd80a9f7a6!2z2KfZhNio2YbYpyDZhNiq2LTYutmK2YQg2KfZhNmF2LnYp9iv2YY!5e0!3m2!1sar!2seg!4v1763907478611!5m2!1sar!2seg" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon"><img src="logo.png" width="50"></div>
+                        <span class="footer-logo-text">H.M ELBANNA</span>
+                    </div>
+                    <p class="footer-description" data-i18n="infrastructure-with-premium" >
+                        Building tomorrow's infrastructure with premium steel solutions since 2001.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="#0f172a"
+                                    stroke-width="2" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading" data-i18n="Quick-Links">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about" data-i18n="About-Us">About Us</a></li>
+                        <li><a href="#products" data-i18n="Products">Products</a></li>
+                        <li><a href="#process" data-i18n="Our-Process">Our Process</a></li>
+                        <li><a href="#news" data-i18n="News-Updates">News & Updates</a></li>
+                        <li><a href="#contact" data-i18n="Contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading" data-i18n="Services">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" >Structural Steel</a></li>
+                        <li><a href="#" >Custom Fabrication</a></li>
+                        <li><a href="#" >Engineering Support</a></li>
+                        <li><a href="#" >Quality Testing</a></li>
+                        <li><a href="#" >Logistics & Delivery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading" data-i18n="Newsletter">Newsletter</h3>
+                    <p class="newsletter-text" data-i18n="Subscribe">
+                        Subscribe to our newsletter for industry insights and updates.
+                    </p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <button class="btn btn-primary btn-full newsletter-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright" data-i18n="ELBANNA"> © 2025 H.M ELBANNA Industries. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" data-i18n="Home">Privacy Policy</a>
+                    <a href="#" data-i18n="Home">Terms of Service</a>
+                    <a href="#" data-i18n="Home">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+
+    <script src="https://unpkg.com/i18next@23.4.6/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
+    <script
+        src="https://unpkg.com/i18next-browser-languagedetector@6.1.5/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
