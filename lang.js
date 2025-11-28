@@ -2,14 +2,23 @@ i18next
   .use(i18nextHttpBackend)
   .use(i18nextBrowserLanguageDetector)
   .init({
-    fallbackLng: 'en',
+    fallbackLng: 'ar',
     debug: true,
     backend: {
-      loadPath: 'locales/{{lng}}.json'
+      loadPath: '/locales/{{lng}}.json'
     }
   }, function(err, t) {
+        // إجبار أول تشغيل على العربية
+    if (!localStorage.getItem('i18nextLng')) {
+      i18next.changeLanguage('ar');
+    }
+    if(  e.target.getAttribute("data-lang") === 'ar')  {
+            i18next.changeLanguage('ar');
+
+    }
     updateContent();
   });
+  
 
 function updateContent() {
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -37,5 +46,3 @@ document.querySelectorAll(".lang-option").forEach(option => {
     document.getElementById("langMenu").style.display = "none";
   });
 });
-
-

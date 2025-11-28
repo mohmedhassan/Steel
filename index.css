@@ -506,11 +506,11 @@ body {
 
 .btn-primary {
   color: #fff;
-  background: #2563eb;
+  background: #A6262E;
 }
 
 .btn-primary:hover {
-  background: #1d4ed8;
+  background: #360508;
 }
 
 .btn-outline {
@@ -651,7 +651,7 @@ body {
 }
 
 .section-badge {
-  color: #2563eb;
+  color: #A6262E;
   background: #dbeafe;
   border-radius: 9999px;
   margin-bottom: 1rem;
@@ -701,7 +701,7 @@ body {
 }
 
 .timeline-line {
-  background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+  background: linear-gradient(to right, #A6262E 0%, #06b6d4 100%);
   border-radius: 9999px;
   width: 5rem;
   height: 4px;
@@ -724,7 +724,7 @@ body {
 
 .timeline-marker {
   z-index: 10;
-  background: #2563eb;
+  background: #A6262E;
   border-radius: 50%;
   flex-shrink: 0;
   width: 1rem;
@@ -751,7 +751,7 @@ body {
 }
 
 .timeline-year {
-  color: #2563eb;
+  color: #A6262E;
   margin-bottom: .5rem;
   font-weight: 600;
 }
@@ -855,7 +855,7 @@ body {
 }
 
 .value-icon svg {
-  color: #2563eb;
+  color: #A6262E;
 }
 
 .value-title {
@@ -939,7 +939,7 @@ body {
 
 .feature-item:before {
   content: "";
-  background: #2563eb;
+  background: #A6262E;
   border-radius: 50%;
   flex-shrink: 0;
   width: 6px;
@@ -1061,7 +1061,7 @@ body {
 }
 
 .process-icon-1 {
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #A6262E 100%);
 }
 
 .process-icon-2 {
@@ -1094,7 +1094,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   z-index: 10;
-  background: linear-gradient(135deg, #2563eb1a 0%, #06b6d41a 100%);
+  background: linear-gradient(135deg, #A6262E1a 0%, #06b6d41a 100%);
   border: 1px solid #3b82f633;
   border-radius: 1rem;
   padding: 3rem 2rem;
@@ -1286,7 +1286,7 @@ body {
 
 .news-category {
   color: #fff;
-  background: #2563eb;
+  background: #A6262E;
   border-radius: 9999px;
   padding: .25rem .75rem;
   font-size: .85rem;
@@ -1321,7 +1321,7 @@ body {
 }
 
 .news-card:hover .news-title {
-  color: #2563eb;
+  color: #A6262E;
 }
 
 .news-excerpt {
@@ -1330,7 +1330,7 @@ body {
 }
 
 .news-link {
-  color: #2563eb;
+  color: #A6262E;
   cursor: pointer;
   background: none;
   border: none;
@@ -1405,7 +1405,7 @@ body {
 }
 
 .form-group input:focus, .form-group textarea:focus {
-  border-color: #2563eb;
+  border-color: #A6262E;
   outline: none;
 }
 
@@ -1441,7 +1441,7 @@ body {
 }
 
 .contact-info-icon svg {
-  color: #2563eb;
+  color: #A6262E;
 }
 
 .contact-info-content h4 {
@@ -1544,7 +1544,7 @@ body {
 }
 
 .social-link:hover {
-  background: #2563eb;
+  background: #A6262E;
 }
 
 .footer-heading {
@@ -1593,7 +1593,7 @@ body {
 }
 
 .newsletter-input:focus {
-  border-color: #2563eb;
+  border-color: #A6262E;
   outline: none;
 }
 
@@ -1813,4 +1813,12 @@ body {
 
 html {
   font-size: var(--font-size);
+}
+
+
+.logo-underline{
+    display: flex;
+    top: 20px;
+    position: relative;
+    left: -50px;
 }
