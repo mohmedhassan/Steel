@@ -5,7 +5,7 @@ i18next
     fallbackLng: 'ar',
     debug: true,
     backend: {
-      loadPath: 'locales/{{lng}}.json'
+      loadPath: 'Steel/locales/{{lng}}.json'
     }
   }, function(err, t) {
         // إجبار أول تشغيل على العربية
@@ -46,4 +46,5 @@ document.querySelectorAll(".lang-option").forEach(option => {
     document.getElementById("langMenu").style.display = "none";
   });
 });
+
 
